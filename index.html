@@ -6,7 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>DJ Artur Colobialle</title>
 
-  
+
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -21,6 +21,8 @@
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 
+    <!-- Font Awesome para ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -56,8 +58,8 @@
         <ul>
           <li><a href="#hero" class="active">Inicio</a></li>
           <li><a href="#about">Sobre o DJ</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#call-to-action">Vídeos</a></li>
+          <li><a href="#portfolio">Fotos</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -81,8 +83,7 @@
               <div class="divider"></div>
 
               <div class="description">
-                Testemunhe a maestria musical de DJ Colobialle, o artista que redefiniu o cenário da música
-                eletrônica global. É mais do que apenas música!
+                Vem sentir a vibe com Artur Mendes, um DJ que tá chegando pra fazer barulho nas pistas! Cada set é feito pra te fazer dançar, curtir e viver momentos inesquecíveis.
               </div>
 
               <div class="cta-button">
@@ -171,17 +172,47 @@
 
           <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left" data-aos-delay="300">
             <div class="about-content">
-              <h2>Artut Mendes</h2>
-              <p class="lead">Prepare-se para uma experiência sonora sem igual</p>
-              <p>Conheça a mente por trás dos sets mais incríveis e das pistas mais animadas.</p>
-              <p>Assista a vídeos de apresentações marcantes que capturam a interação com o público e a maestria técnica
-                que o tornaram um fenômeno global.</p>
+              <h2>Quem é Artur Mendes?</h2>
+              <p class="lead">Muito mais que som. É energia, é conexão!</p>
+              <p>Sou apaixonado por música, por pista cheia e por ver a galera feliz dançando. Tô começando essa
+                caminhada e quero te levar junto nessa jornada. Bora viver essa vibe!</p>
+              <p>Bora construir essa história juntos, fazer muito barulho, espalhar energia e viver experiências que
+                ficam na memória.</p>
+             
+        <h4 class="my-4">Siga DJ Colobialle</h4>
+        
+        <div class="social-icons d-flex justify-content-start gap-4">
 
-              <a href="https://www.instagram.com/reel/DJCRp0RJZ32/" class="btn btn-primary mt-4"><i
-                  class="bi bi-instagram"></i> Veja meu Instagram </a>
-              <br>
-              <a href="https://www.youtube.com/@djcolobialle27" class="btn btn-primary mt-4"><i
-                  class="bi bi-youtube"></i> Veja meu YouTube</a>
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/@djcolobialle27" target="_blank" aria-label="YouTube">
+                <i class="fab fa-youtube fa-2x"></i>
+            </a>
+
+            <!-- SoundCloud -->
+            <a href="https://soundcloud.com/artur-mendes-153130615" target="_blank" aria-label="SoundCloud">
+                <i class="fab fa-soundcloud fa-2x"></i>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://api.whatsapp.com/send/?phone=555581985940244" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp fa-2x"></i>
+            </a>
+
+            <!-- Instagram -->
+            <a href="https://www.instagram.com/dj__colobialle_27/" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@djcolobialle27" target="_blank" aria-label="TikTok">
+                <i class="fab fa-tiktok fa-2x"></i>
+            </a>
+
+    </div>
+
+
+
+
             </div>
           </div>
         </div>
@@ -210,7 +241,7 @@
 
           <div class="content-right position-relative" data-aos="fade-left" data-aos-delay="300">
 
-            <iframe width="460" height="280" src="https://www.youtube.com/embed/qMk3u31BnIk?si=j_b7mw3oZ2zsG9h2"
+            <iframe id="video-promocional" width="100%" height="280" src="https://www.youtube.com/embed/qMk3u31BnIk?si=j_b7mw3oZ2zsG9h2"
               title="YouTube video player" frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -249,11 +280,199 @@
                   <div class="entry-overlay">
                     <div class="overlay-content">
                       <div class="entry-links">
-                        <a href="assets/img/artur-5.jpeg" class="glightbox"
-                          data-gallery="portfolio-gallery-ui">
+                        <a href="assets/img/artur-5.jpeg" class="glightbox" data-gallery="portfolio-gallery-ui">
                           <i class="bi bi-arrows-angle-expand"></i>
                         </a>
-                        
+
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/artur-6.jpeg" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-links">
+                        <a href="assets/img/artur-6.jpeg" class="glightbox" data-gallery="portfolio-gallery-ui">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/artur-7.jpeg" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-links">
+                        <a href="assets/img/artur-7.jpeg" class="glightbox" data-gallery="portfolio-gallery-ui">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/artur-8.jpeg" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-links">
+                        <a href="assets/img/artur-8.jpeg" class="glightbox" data-gallery="portfolio-gallery-ui">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/artur-9.jpeg" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-links">
+                        <a href="assets/img/artur-9.jpeg" class="glightbox" data-gallery="portfolio-gallery-ui">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/artur-10.jpeg" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-links">
+                        <a href="assets/img/artur-10.jpeg" class="glightbox" data-gallery="portfolio-gallery-ui">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+            
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/artur-11.jpeg" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-links">
+                        <a href="assets/img/artur-11.jpeg" class="glightbox" data-gallery="portfolio-gallery-ui">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/artur-12.jpeg" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-links">
+                        <a href="assets/img/artur-12.jpeg" class="glightbox" data-gallery="portfolio-gallery-ui">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+
+            
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/artur-13.jpeg" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-links">
+                        <a href="assets/img/artur-13.jpeg" class="glightbox" data-gallery="portfolio-gallery-ui">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/artur-14.jpeg" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-links">
+                        <a href="assets/img/artur-14.jpeg" class="glightbox" data-gallery="portfolio-gallery-ui">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+
+            <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/artur-15.jpeg" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-links">
+                        <a href="assets/img/artur-15.jpeg" class="glightbox" data-gallery="portfolio-gallery-ui">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+
                       </div>
                     </div>
                   </div>
@@ -264,34 +483,14 @@
              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
               <article class="portfolio-entry">
                 <figure class="entry-image">
-                  <img src="assets/img/artur-6.jpeg" class="img-fluid" alt="" loading="lazy">
+                  <img src="assets/img/artur-16.jpeg" class="img-fluid" alt="" loading="lazy">
                   <div class="entry-overlay">
                     <div class="overlay-content">
                       <div class="entry-links">
-                        <a href="assets/img/artur-6.jpeg" class="glightbox"
-                          data-gallery="portfolio-gallery-ui">
+                        <a href="assets/img/artur-16.jpeg" class="glightbox" data-gallery="portfolio-gallery-ui">
                           <i class="bi bi-arrows-angle-expand"></i>
                         </a>
-                        
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
 
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/artur-7.jpeg" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-links">
-                        <a href="assets/img/artur-7.jpeg" class="glightbox"
-                          data-gallery="portfolio-gallery-ui">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        
                       </div>
                     </div>
                   </div>
@@ -301,18 +500,36 @@
 
 
             
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+             <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
               <article class="portfolio-entry">
                 <figure class="entry-image">
-                  <img src="assets/img/artur-8.jpeg" class="img-fluid" alt="" loading="lazy">
+                  <img src="assets/img/artur-17.jpeg" class="img-fluid" alt="" loading="lazy">
                   <div class="entry-overlay">
                     <div class="overlay-content">
                       <div class="entry-links">
-                        <a href="assets/img/artur-8.jpeg" class="glightbox"
-                          data-gallery="portfolio-gallery-ui">
+                        <a href="assets/img/artur-17.jpeg" class="glightbox" data-gallery="portfolio-gallery-ui">
                           <i class="bi bi-arrows-angle-expand"></i>
                         </a>
-                        
+
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+  
+             <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/artur-18.jpeg" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-links">
+                        <a href="assets/img/artur-18.jpeg" class="glightbox" data-gallery="portfolio-gallery-ui">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+
                       </div>
                     </div>
                   </div>
@@ -321,19 +538,35 @@
             </div><!-- End Portfolio Item -->
 
 
-            
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+             <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
               <article class="portfolio-entry">
                 <figure class="entry-image">
-                  <img src="assets/img/artur-9.jpeg" class="img-fluid" alt="" loading="lazy">
+                  <img src="assets/img/artur-19.jpeg" class="img-fluid" alt="" loading="lazy">
                   <div class="entry-overlay">
                     <div class="overlay-content">
                       <div class="entry-links">
-                        <a href="assets/img/artur-9.jpeg" class="glightbox"
-                          data-gallery="portfolio-gallery-ui">
+                        <a href="assets/img/artur-19.jpeg" class="glightbox" data-gallery="portfolio-gallery-ui">
                           <i class="bi bi-arrows-angle-expand"></i>
                         </a>
-                        
+
+                      </div>
+                    </div>
+                  </div>
+                </figure>
+              </article>
+            </div><!-- End Portfolio Item -->
+
+             <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
+              <article class="portfolio-entry">
+                <figure class="entry-image">
+                  <img src="assets/img/artur-20.jpeg" class="img-fluid" alt="" loading="lazy">
+                  <div class="entry-overlay">
+                    <div class="overlay-content">
+                      <div class="entry-links">
+                        <a href="assets/img/artur-20.jpeg" class="glightbox" data-gallery="portfolio-gallery-ui">
+                          <i class="bi bi-arrows-angle-expand"></i>
+                        </a>
+
                       </div>
                     </div>
                   </div>
@@ -342,25 +575,6 @@
             </div><!-- End Portfolio Item -->
 
 
-              <div class="col-xl-3 col-lg-4 col-md-6 portfolio-item isotope-item filter-ui">
-              <article class="portfolio-entry">
-                <figure class="entry-image">
-                  <img src="assets/img/artur-10.jpeg" class="img-fluid" alt="" loading="lazy">
-                  <div class="entry-overlay">
-                    <div class="overlay-content">
-                      <div class="entry-links">
-                        <a href="assets/img/artur-10.jpeg" class="glightbox"
-                          data-gallery="portfolio-gallery-ui">
-                          <i class="bi bi-arrows-angle-expand"></i>
-                        </a>
-                        
-                      </div>
-                    </div>
-                  </div>
-                </figure>
-              </article>
-            </div><!-- End Portfolio Item -->
-           
 
           </div><!-- End Portfolio Container -->
 
@@ -373,17 +587,6 @@
 
 
   </main>
-
-  <footer id="footer" class="footer">
-
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">DJ Colobialle</strong> <span>All Rights Reserved</span>
-      </p>
-
-    </div>
-
-  </footer>
-
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
